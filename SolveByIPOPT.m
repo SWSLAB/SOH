@@ -21,7 +21,7 @@ fprintf('################################################\n\n\n')
 load('ProblemsData.mat');
 
 Tmax=8;
-for T=2:2
+for T=1:Tmax
     Q=sdpvar(Ntot,T,'full');
     C=sdpvar(Ntot,T,'full');
     M=sdpvar(Ntot,T,'full');
